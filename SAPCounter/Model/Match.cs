@@ -1,6 +1,8 @@
-﻿namespace SAPCounter.Model
+﻿using System.Diagnostics.Metrics;
+
+namespace SAPCounter.Model
 {
-    public class Match
+    public abstract class Match
     {
         public enum SapMatchType
         {
@@ -9,5 +11,10 @@
             Other
         }
         public SapMatchType CurrentMatchType { get; set; }
+
+        public Match(SapMatchType matchType)
+        {
+            CurrentMatchType = matchType;
+        }
     }
 }

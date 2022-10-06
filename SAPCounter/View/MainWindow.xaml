@@ -5,9 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SAPCounter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="{DynamicResource BackgroundImage}">
+        Title="MainWindow" Height="450" Width="800" Background="White">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
+        <Label Grid.Row="0" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center">SAP Summoner Counter</Label>
+
+        <ItemsControl Grid.Row="1" ItemsSource="{Binding AllUserControls}" Height="Auto">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="3"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+
+        <Button Grid.Row="2" Background="OrangeRed" Click="Button_Click">EXIT</Button>
+        
     </Grid>
 </Window>

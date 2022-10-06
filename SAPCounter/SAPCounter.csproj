@@ -7,4 +7,24 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Resources\Media\Pictures\Background.jpg" />
+    <None Remove="Resources\Media\Pictures\Hybrid\Ox.png" />
+    <None Remove="Resources\Media\Pictures\Hybrid\Sheep.png" />
+    <None Remove="Resources\Media\Pictures\Other\Boar.png" />
+    <None Remove="Resources\Media\Pictures\Other\Rhino.png" />
+    <None Remove="Resources\Media\Pictures\Summoner\Fly.png" />
+    <None Remove="Resources\Media\Pictures\Summoner\Turkey.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Media\Pictures\Background.jpg" />
+    <Resource Include="Resources\Media\Pictures\Hybrid\Ox.png" />
+    <Resource Include="Resources\Media\Pictures\Hybrid\Sheep.png" />
+    <Resource Include="Resources\Media\Pictures\Other\Boar.png" />
+    <Resource Include="Resources\Media\Pictures\Other\Rhino.png" />
+    <Resource Include="Resources\Media\Pictures\Summoner\Fly.png" />
+    <Resource Include="Resources\Media\Pictures\Summoner\Turkey.png" />
+  </ItemGroup>
+
 </Project>
