@@ -4,6 +4,9 @@
              xmlns:local="clr-namespace:SAPCounter"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <ImageSource x:Key="BackgroundImageSource">Media/Pictures/Background.jpg</ImageSource>
+        <ImageBrush x:Key="BackgroundImage" ImageSource="{DynamicResource BackgroundImageSource}"/>
+
     </Application.Resources>
 </Application>
