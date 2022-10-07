@@ -2,9 +2,9 @@
 
 namespace SAPCounter.View.Controls.Hybrid
 {
-    public class ViewModelMatchHybrid : INotifyPropertyChanged
+    public class ViewModelMatchHybrid : ViewModelBase, INotifyPropertyChanged
     {
-        public Model.MatchHybrid matchHybrid { get; set; }
+        public Model.MatchHybrid? MatchHybrid { get; set; }
         public int Counter
         {
             get { return Model.MatchHybrid.Counter; }
@@ -16,12 +16,6 @@ namespace SAPCounter.View.Controls.Hybrid
                     OnPropertyChanged(nameof(Counter));
                 }
             }
-        }
-
-        public event PropertyChangedEventHandler? PropertyChanged;
-        public void OnPropertyChanged(string info)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(info));
         }
     }
 }

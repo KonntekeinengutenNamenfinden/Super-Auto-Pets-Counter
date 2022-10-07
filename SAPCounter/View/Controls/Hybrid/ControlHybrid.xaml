@@ -12,10 +12,10 @@
             <Image Source="/Resources/Media/Pictures/Hybrid/Sheep.png" Grid.Column="0" HorizontalAlignment="Right" Height="50"/>
             <Image Source="/Resources/Media/Pictures/Hybrid/Ox.png" Grid.Column="1" HorizontalAlignment="Left" Height="50"/>
         </ItemsControl>
-        <Label Content="Hybrid Builds" Grid.Row="1" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Hybrid Builds" Grid.Row="1" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold" Background="White"/>
         <ItemsControl Style="{StaticResource ControlGridLabelTextbox}" Grid.Row="2">
-            <Label FontWeight="Bold" HorizontalAlignment="Right">Counter:</Label>
-            <Label Content="{Binding Counter}" FontWeight="Bold" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label FontWeight="Bold" HorizontalAlignment="Right" Background="White">Counter:</Label>
+            <Label Content="{Binding Counter}" FontWeight="Bold" HorizontalAlignment="Left" Grid.Column="1" Background="White"/>
         </ItemsControl>
         <ItemsControl Style="{StaticResource ControlGridButtonAndLabel}" Grid.Row="3">
             <Button Style="{StaticResource ButtonPlus}" Grid.Column="0" HorizontalAlignment="Right" Click="Button_Click"/>

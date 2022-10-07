@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace SAPCounter.View.Controls.Other
 {
-    public class ViewModelOther : INotifyPropertyChanged
+    public class ViewModelOther : ViewModelBase, INotifyPropertyChanged
     {
-        public Model.MatchOther matchOther { get; set; }
+        public Model.MatchOther? MatchOther { get; set; }
         public int Counter
         {
             get { return Model.MatchOther.Counter; }
@@ -22,12 +17,6 @@ namespace SAPCounter.View.Controls.Other
                 }
 
             }
-        }
-
-        public event PropertyChangedEventHandler? PropertyChanged;
-        public void OnPropertyChanged(string info)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(info));
         }
     }
 }

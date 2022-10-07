@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.Metrics;
-
-namespace SAPCounter.Model
+﻿namespace SAPCounter.Model
 {
     public abstract class Match
     {

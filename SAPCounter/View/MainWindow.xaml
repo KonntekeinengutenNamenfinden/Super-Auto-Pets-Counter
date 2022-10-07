@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SAPCounter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="White">
+        Title="MainWindow" SizeToContent="WidthAndHeight" Background="{StaticResource BackgroundImage}">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
@@ -24,7 +25,8 @@
             </ItemsControl.ItemsPanel>
         </ItemsControl>
 
-        <Button Grid.Row="2" Background="OrangeRed" Click="Button_Click">EXIT</Button>
+        <Button x:Name="MakeStatistic" Grid.Row="2" Background="Blue" Click="MakeStatistic_Click">Create statistic</Button>
+        <Button x:Name="BtnExit" Grid.Row="3" Background="OrangeRed" Click="BtnExit_Click">EXIT</Button>
         
     </Grid>
 </Window>

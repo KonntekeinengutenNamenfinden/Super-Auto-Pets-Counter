@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\graph.png" />
     <None Remove="Resources\Media\Pictures\Background.jpg" />
     <None Remove="Resources\Media\Pictures\Hybrid\Ox.png" />
     <None Remove="Resources\Media\Pictures\Hybrid\Sheep.png" />
@@ -18,6 +19,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="DotNetProjects.WpfToolkit.DataVisualization" Version="6.1.94" />
+    <PackageReference Include="QuickChart" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\graph.png" />
     <Resource Include="Resources\Media\Pictures\Background.jpg" />
     <Resource Include="Resources\Media\Pictures\Hybrid\Ox.png" />
     <Resource Include="Resources\Media\Pictures\Hybrid\Sheep.png" />

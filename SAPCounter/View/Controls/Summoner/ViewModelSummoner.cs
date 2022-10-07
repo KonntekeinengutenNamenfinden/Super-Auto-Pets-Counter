@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace SAPCounter.View.Controls.Summoner
 {
-    public class ViewModelSummoner : INotifyPropertyChanged
+    public class ViewModelSummoner : ViewModelBase, INotifyPropertyChanged
     {
-        public Model.MatchSummoner matchSummoner { get; set; }
+        public Model.MatchSummoner? MatchSummoner { get; set; }
         public int Counter
         {
             get { return Model.MatchSummoner.Counter; }
@@ -22,12 +17,6 @@ namespace SAPCounter.View.Controls.Summoner
                 }
 
             }
-        }
-
-        public event PropertyChangedEventHandler? PropertyChanged;
-        public void OnPropertyChanged(string info)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(info));
         }
     }
 }
